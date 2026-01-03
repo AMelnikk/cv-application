@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "../styles/first_section.css";
+import "../styles/sections.css";
 import toggleButton from "../assets/toggle-more.svg";
 
 function General_info() {
@@ -55,7 +55,7 @@ function General_info() {
   }
 
   return (
-    <div className="general-info section">
+    <div className="section">
       <button className="section-head" onClick={toggleIsOpen}>
         <h1>General information</h1>
         <img
