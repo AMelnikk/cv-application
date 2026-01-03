@@ -2,13 +2,18 @@ import { useState } from "react";
 import "../styles/sections.css";
 import toggleButton from "../assets/toggle-more.svg";
 
-function PracticalExperience() {
-  const [companyName, setCompanyName] = useState("");
-  const [positionTitle, setPositionTitle] = useState("");
-  const [responsibilities, setResponsibilities] = useState("");
-  const [beginWork, setBeginWork] = useState("");
-  const [isOpen, setIsOpen] = useState(false);
-
+function PracticalExperience({
+  companyName,
+  positionTitle,
+  responsibilities,
+  beginWork,
+  isOpen,
+  setCompanyName,
+  setPositionTitle,
+  setResponsibilities,
+  setBeginWork,
+  setIsOpen,
+}) {
   function toggleIsOpen() {
     setIsOpen(!isOpen);
   }

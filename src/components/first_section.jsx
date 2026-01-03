@@ -1,13 +1,16 @@
-import { useState } from "react";
 import "../styles/sections.css";
 import toggleButton from "../assets/toggle-more.svg";
 
-function General_info() {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [number, setNumber] = useState("");
-  const [isOpen, setIsOpen] = useState(false);
-
+function General_info({
+  name,
+  email,
+  number,
+  isOpen,
+  setName,
+  setEmail,
+  setNumber,
+  setIsOpen,
+}) {
   function toggleIsOpen() {
     setIsOpen(!isOpen);
   }
@@ -69,5 +72,4 @@ function General_info() {
     </div>
   );
 }
-
 export default General_info;

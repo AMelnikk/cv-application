@@ -1,14 +1,10 @@
-import { StrictMode } from "react";
+import { StrictMode, useState } from "react";
 import { createRoot } from "react-dom/client";
 import "./styles/index.css";
-import General_info from "./components/first_section";
-import EducationalExperience from "./components/second_section";
-import PracticalExperience from "./components/third_section";
+import Parent from "./components/parent";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <General_info />
-    <EducationalExperience />
-    <PracticalExperience />
+    <Parent></Parent>
   </StrictMode>
 );

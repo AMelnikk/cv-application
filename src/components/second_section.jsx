@@ -2,13 +2,18 @@ import { useState } from "react";
 import "../styles/sections.css";
 import toggleButton from "../assets/toggle-more.svg";
 
-function EducationalExperience() {
-  const [schoolName, setSchoolName] = useState("");
-  const [titleStudy, setTitleStudy] = useState("");
-  const [beginStudy, setBeginStudy] = useState("");
-  const [endStudy, setEndStudy] = useState("");
-  const [isOpen, setIsOpen] = useState(false);
-
+function EducationalExperience({
+  schoolName,
+  titleStudy,
+  beginStudy,
+  endStudy,
+  isOpen,
+  setSchoolName,
+  setTitleStudy,
+  setBeginStudy,
+  setEndStudy,
+  setIsOpen,
+}) {
   function toggleIsOpen() {
     setIsOpen(!isOpen);
   }
